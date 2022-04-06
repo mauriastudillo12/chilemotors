@@ -1,0 +1,335 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChileMotors - Barra de navegación con Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stilos.css">
+</head>
+  <body>
+      <header class="header">
+        <div class="container-fluid">
+            <!-- BARRA NAVEGACIÓN -->
+            <div class="btn-primary">
+                <nav class="navbar navbar-expand-md navbar-light bg-light  border-primary " >
+                    <div class="container-fluid">
+                        <a class="navbar-brand"><img src="img/logo.png" ></a>
+                        <button type="button"
+                            class="navbar-toggler"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#MenuNavegacion">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+        
+                    <div id="MenuNavegacion" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href=""></a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ingresar.html">Ingresar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registrarse.html">Registrarse</a>
+                                
+                            </li>
+                            <li class="nav-item dropdown">
+                              
+                                <ul class="dropdown-menu">
+                                  
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-nowrap" href="#">Vende tu auto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="text-hero">
+                <div class="container">
+                    <h3>ChileMotors</h3>
+                    <h5></h5>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="svg-hero" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.99 C294.80,215.63 435.89,-60.69 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+      </header>
+   
+
+
+
+
+<div class="container">
+    <div class="titulo-img">
+      <h3>Elige el modelo que buscas</h3>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="img/convertible2.jpg " class="img-fluid">
+            <h3>Convertible</h3>
+            <a href="" class="btn btn-primary">Entrar</a>
+
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="img/coupe.jpg " class="img-fluid">
+          <h3>Coupe</h3>
+          <a href="coupe.html" class="btn btn-primary">Entrar</a>
+
+      </div>
+      <div class="col-md-4 text-center">
+          <img src="img/doble cabina.jpg " class="img-fluid">
+          <h3>Doble cabina</h3>
+          <a href="" class="btn btn-primary">Entrar</a>
+
+      </div>
+      <div class="col-md-4 text-center">
+          <img src="img/hatchabck.jpg " class="img-fluid">
+          <h3>hatchabck<h3>
+          <a href="" class="btn btn-primary">Entrar</a>
+
+      </div>
+      <div class="col-md-4 text-center">
+          <img src="img/sedan.jpg " class="img-fluid">
+          <h3>Sedan</h3>
+          <a href="sedan.html" class="btn btn-primary">Entrar</a>
+
+      </div>
+      <div class="col-md-4 text-center">
+          <img src="img/suv.jpg " class="img-fluid">
+          <h3>Suv</h3>
+          <a href="" class="btn btn-primary">Entrar</a>
+
+      </div>
+    </div>
+</div>
+
+
+  <style>
+    .carousel-item{
+        height: 32rem;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        position: relative;
+       
+        
+
+    }
+
+    .rusel{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 15px ;
+    }
+
+    .overlay-image{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.5;
+
+    }
+  </style>
+
+  
+
+  <div id="myCarousel" class="carousel slider"
+  data-ride="carousel">
+       <ol class="carousel-indicators">
+          <li data-target="#myCarousel"
+          data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel"
+          data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active" >
+          <div class="overlay-image"style="background-image:url(./img/noticia1.jpg);"></div>
+          <div class="rusel">
+          <h1>Renault Clio en Chile: el regreso del verdadero ícono francés</h1>
+          <p>En marzo de 2019, mucho antes de que en Chile se produjera el estallido social y un año antes de que la pandemia del Coronavirus nos cambiara la vida, Renault estrenó en sociedad 
+              la quinta generación del Clio, por
+               lejos el modelo más importante de su gama, número dos en ventas en Europa, dos veces elegido Car of the Year y con más de 15 millones de unidades comercializadas desde su lanzamiento en 1990.</p>
+          <a href="#" class="btn btn-lg btn-primary">
+            Ver noticia
+           </a>
+          </div>
+          </div>
+          <div class="carousel-item  ">
+      <div class="rusel">
+          <h1>Renault Clio en Chile: el regreso del verdadero ícono francés</h1>
+          <p> Renault estrenó en sociedad la quinta generación del Clio, por lejos el modelo más importante de su gama, número dos en ventas en Europa, dos veces elegido Car of the Year y con más de 15 millones de unidades comercializadas desde su lanzamiento en 1990.</p>
+          <a href="#" class="btn btn-lg btn-primary">
+            Ver noticia
+           </a>
+      </div>
+      <div class="rusel">
+          <h1>f5555555</h1>
+          <p>yjyj</p>
+          <a href="#" class="btn btn-lg btn-primary">
+            kjskjkjk
+           </a>
+      </div>
+          </div>
+      </div>
+      <a href="#myCarousel"
+      class="carousel-control-prev" role="button"
+      data-slide="prev">
+          <span class="sr-only"></span>
+          <span class="carousel-control-prev-icon"
+          aria-hidden="true"></span>
+      
+      </a>
+      <a href="#myCarousel"
+      class="carousel-control-next" role="button"
+      data-slide="prev">
+          <span class="sr-only"></span>
+          <span class="carousel-control-next-icon"
+          aria-hidden="true"></span>
+      
+      </a>
+  </div>
+
+  <footer class="bg-ligth text-dark pt-5 pb-4">
+      <div class="container-f text-center text-md-left">
+          <div class="row text-center tex-md-left">
+
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weigth-bold text-info">Nuestro sitio</h5>
+                  <hr class="mb-4">
+                  <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> Iniciar sesion</a>
+                </p>
+                <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> Registrarse</a>
+                </p>
+                <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> Vende tu auto</a>
+                </p>
+                <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> Mi cuenta</a>
+                </p>
+                <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> </a>
+                </p>
+                  
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fond-weigth-bold text-info">Acerca de</h5>
+                <hr class="mb-4">
+                <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> Quienes somos</a>
+                </p>
+                <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> Preguntas frecuentes</a>
+                </p>
+                <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> Termino y condiciones</a>
+                </p>
+                <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> </a>
+                </p>
+
+              </div>
+
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fond-weigth-bold text-info">Redes sociales</h5>
+                <hr class="mb-4">
+                <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> Siguenos en Facebook</a>
+                </p>
+                <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> Siguenos en Twitter</a>
+                </p>
+                <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> Siguenos en Instagram</a>
+                </p>
+                <p>
+                    <a href="#" class="text-dark" style="text-decoration:none"> </a>
+                </p>
+
+              </div>
+
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fond-weigth-bold text-info">Contacto</h5>
+                <hr class="mb-4">
+                <p>
+                    <li class="fas fa-home mr-3"></li> Av. Departamental 4500, Macul, Santiago
+                </p>
+                <p>
+                    <li class="fas fa-evelope mr-3"></li> Chilemotors.contactos@gmail.com 
+                </p>
+                <p>
+                    <li class="fas fa-phone mr-3"></li> +56949659297
+                </p>
+                <p>
+                    <li class="fas fa-print mr-3"></li> +56229857459
+                </p>
+                
+
+              </div>
+            </div>
+
+              <hr class="mb-4">
+              <div class="row d-flex justify-content-center">
+
+              </div>
+              <p>
+                  
+                  <a href="#" style="text-decoration:none;">
+                    <strong class="text-info">ChileMotors</strong>
+
+                  </a>
+              </p>
+
+          </div>
+
+      </div>
+      <div class="row d-flex justify-content-center">
+          <div class="text-center">
+              <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                      <a href="#" class="text-dark"><li class="fab fa-facebook"></li></a>
+
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-dark"><li class="fab fa-twitter"></li></a>
+
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-dark"><li class="fab fa-google-plus"></li></a>
+
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-dark"><li class="fab fa-youtube"></li></a>
+
+                </li>
+
+              </ul>
+
+          </div>
+
+      </div>
+
+  </footer>
+
+
+  
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>
+</html>
